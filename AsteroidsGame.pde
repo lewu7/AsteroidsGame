@@ -22,11 +22,11 @@ public void draw(){
     } //left
     
     if(key == 'w' || key == 'W'){
-      ship.setYspeed(-5);
+      ship.setYspeed(-2);
     } //up
     
     if(key == 's' || key == 'S'){
-      ship.setYspeed(5);
+      ship.setYspeed(2);
     } //down
     
     if(key == 'd' || key == 'D'){
@@ -35,7 +35,7 @@ public void draw(){
     } //move right 
     
     if(key == 'j' || key == 'J'){
-      ship.accelerate(0.5);
+      ship.accelerate(0.1);
     }//accelerate
  }
  for(int i = 0; i < nightSky.length; i++){
