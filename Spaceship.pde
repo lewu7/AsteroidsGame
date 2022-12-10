@@ -14,9 +14,9 @@ class Spaceship extends Floater
     //positions
     myCenterX = 350;
     myCenterY = 350;
+    myPointDirection = 0;
     
     //speed
-    myPointDirection = 0;
     myXspeed = 0;
     myYspeed = 0;
   } //end of constructor
@@ -26,27 +26,27 @@ class Spaceship extends Floater
     myYspeed = 0;
     myCenterX = (Math.random()*500+50);
     myCenterY = (Math.random()*500+50);
-    
-    
-  }
+  } //end of no argument constructor
   
-  public void setYspeed(int a){
-    myYspeed = a; 
-  }
+  public void setYspeed(int a){myYspeed = a;}
+  public void setXspeed(int b){myXspeed = b;}
+  //SET x and Y speed
   
-  public void setXspeed(int b){
-    myXspeed = b; 
-  }
-  
-  public double getXspeed(){
-    return myXspeed;
-  }
-  public double getYspeed(){
-    return myYspeed;
-  }
+  public double getXspeed(){return myXspeed;}
+  public double getYspeed(){return myYspeed;}
+  //GET X and Y speed 
   
   public double getX(){return myCenterX;}
   public double getY(){return myCenterY;}
+  //GET X and Y coordinates
   
+  public double getPointDirection(){return myPointDirection;}
+  //GET ship's pointing direction
 
+  /*public void accelerate(double dAmount){
+    super.accelerate(0.5);
+    if(dAmount > 4){
+      dAmount = 4;
+    }
+  }*/
 }
