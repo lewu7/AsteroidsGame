@@ -2,31 +2,17 @@ class Asteroid extends Floater{
   private double rotSpeed; //ranbdomly + or - 
   
   public Asteroid(){
-    //rotSpeed = (Math.random()*30-15); 
     rotSpeed = (Math.random()*5-3);
     
     //asteroids 
-    myColor = color(165, 158, 158);
-    corners = 6;
-    xCorners = new int[corners];
-    yCorners = new int[corners];
-    xCorners[0] = -11; 
-    yCorners[0] =-8;
-    xCorners[1] = 7;
-    yCorners[1] = -8;
-    xCorners[2] = 13;
-    yCorners[2] = 0;
-    xCorners[3] = 6;
-    yCorners[3] = 10;
-    xCorners[4] = -11;
-    yCorners[4] = 8;
-    xCorners[5] = -5;
-    yCorners[5] = 0; 
-    
+    myColor = color(126,126,126);
+    corners = 17;
+    xCorners = new int[]{-32, -30, -26, -16, 0, 4, 26, 32, 38, 40, 38, 32, 16, 0, -14, -28, -30};
+    yCorners = new int[]{6, 12, 20, 28, 32, 34, 32, 24, 14, 8, 0, -6, -10, -8, -10, -8, -4}; 
     
     //speed
-    myXspeed = 1.5;
-    myYspeed = 1.5; 
+    myXspeed = 2;
+    myYspeed = 2; 
     myPointDirection = (Math.random()*TWO_PI);
     
     //position
