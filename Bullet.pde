@@ -17,14 +17,6 @@ class Bullet extends Floater{
   public void move(){
     myCenterX += myXspeed;
     myCenterY += myYspeed;
-    
-    
-    /*for(int s = 0; s < ammo.size(); s++){
-      if(ammo.get(s).getX() > width){
-        ammo.get(s).myCenterX = ship.getX();
-        ammo.get(s).myCenterY = ship.getY();
-      }
-    }*/
   }
   
   public double getX(){return myCenterX;}
