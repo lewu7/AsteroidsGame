@@ -49,6 +49,7 @@ public void draw(){
     } //fire bullets
     
  }
+ 
  for(int i = 0; i < nightSky.length; i++){
    nightSky[i].show();
  }//stars 
